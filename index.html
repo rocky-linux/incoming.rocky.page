@@ -1,0 +1,36 @@
+<html>
+
+<!-- Default "homepage" for Rocky Incoming - should be copied with the html/ contents to the webroot serving this content
+
+If you produce HTML files called "incoming_8.html" and "incoming_9.html" in this folder as well, you can easily flip between them to see 8 + 9 content
+
+
+You can produce the HTML files like:
+python3  ${PROJECT_PATH}/incoming_get.py  ${PROJECT_PATH}/mqtt_data/*.txt  > ${PROJECT_PATH}/html/incoming_8.html
+python3  ${PROJECT_PATH_9}/incoming_get.py  ${PROJECT_PATH}/mqtt_data/*.txt  > ${PROJECT_PATH}/html/incoming_9.html
+-->
+
+<head>
+  <title>Rocky Linux Incoming</title>
+</head>
+
+
+<center><h1>Rocky Linux "INCOMING" Updates Tracker</h1></center>
+
+<table border="1" cellpadding="20" align="center">
+  <tr>
+    <td><b><a href="javascript:void(0);" onClick="document.getElementById('IncomingContent').src = 'incoming_8.html'">Display Rocky Linux 8</a></b></td>
+    <td><b><a href="javascript:void(0);" onClick="document.getElementById('IncomingContent').src = 'incoming_9.html'">Display Rocky Linux 9</a></b></td>
+  </tr>
+</table>
+
+
+<p><br />
+<hr />
+
+<iframe id="IncomingContent" width="97%" height="80%" src="incoming_8.html" frameBorder="0">
+</iframe>
+
+
+</html>
+
