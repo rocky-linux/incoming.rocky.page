@@ -8,6 +8,7 @@ If you produce HTML files called "incoming_8.html" and "incoming_9.html" in this
 You can produce the HTML files like:
 python3  ${PROJECT_PATH}/incoming_get.py  ${PROJECT_PATH}/mqtt_data/*.txt  > ${PROJECT_PATH}/html/incoming_8.html
 python3  ${PROJECT_PATH_9}/incoming_get.py  ${PROJECT_PATH}/mqtt_data/*.txt  > ${PROJECT_PATH}/html/incoming_9.html
+python3  ${PROJECT_PATH_10}/incoming_get.py  ${PROJECT_PATH}/mqtt_data/*.txt  > ${PROJECT_PATH}/html/incoming_10.html
 -->
 
 <head>
@@ -21,6 +22,7 @@ python3  ${PROJECT_PATH_9}/incoming_get.py  ${PROJECT_PATH}/mqtt_data/*.txt  > $
   <tr>
     <td><b><a href="javascript:void(0);" onClick="document.getElementById('IncomingContent').src = 'incoming_8.html'">Display Rocky Linux 8</a></b></td>
     <td><b><a href="javascript:void(0);" onClick="document.getElementById('IncomingContent').src = 'incoming_9.html'">Display Rocky Linux 9</a></b></td>
+    <td><b><a href="javascript:void(0);" onClick="document.getElementById('IncomingContent').src = 'incoming_10.html'">Display Rocky Linux 10</a></b></td>
   </tr>
 </table>
 
